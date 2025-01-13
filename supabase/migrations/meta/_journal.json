@@ -15,6 +15,13 @@
       "when": 1736760083430,
       "tag": "0001_luxuriant_klaw",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1736762697189,
+      "tag": "0002_wooden_oracle",
+      "breakpoints": true
     }
   ]
 }

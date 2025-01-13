@@ -23,14 +23,3 @@ export const posts = pgTable("posts", {
     .notNull()
     .$onUpdate(() => new Date()),
 });
-
-export const products = pgTable("products", {
-  id: serial("id").primaryKey(),
-  name: text("name").notNull(),
-  description: text("description").notNull(),
-  price: integer("price").notNull(),
-  createdAt: timestamp("created_at").notNull().defaultNow(),
-  updatedAt: timestamp("updated_at")
-    .notNull()
-    .$onUpdate(() => new Date()),
-});
