@@ -10,6 +10,18 @@ import {
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    {
+      title: "basyo",
+    },
+    {
+      name: "description",
+      content: "自分だけが知っている、お気に入りの「場所」を共有できるサービス",
+    },
+  ];
+}
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -26,7 +38,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
